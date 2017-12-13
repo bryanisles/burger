@@ -4,7 +4,7 @@ var burger = require("../models/burger.js");
 var router = express.Router();
 
 router.get("/", (req,res) => {
-	burger.selectAll((data)=>{
+	burger.selectAll((data) => {
 		var hbsObject = {
 			burgers: data
 		};
@@ -22,7 +22,6 @@ router.post("/", (req, res) => {
 router.put("/:id", (req,res) => {
 	var condition = "id =" + req.params.id;
 	console.log("condition", condition);
-
 	burger.updateOne({
 		devoured: 1
 	}, condition, () => {

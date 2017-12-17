@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Let's Eat</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+	{{!-- CSS created by Me --}}
+	<link rel="stylesheet" href="../../public/assets/css/burger_style.css" />
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="jumbotron">
+			<h1 class="display-3">Let's Eat</h1>
+			<p class="lead">A simple todo list for eating</p>
+			<hr class="my-4">
+			<p class="lead">
+				<a class="btn btn-primary btn-sm" href="https://github.com/bryanisles/burger" role="button">Github repository</a>
+			</p>
+		</div>
+	</div>
+
+	{{{ body }}}
+	
+	<div class="container">
+		<hr class="my-4">
+		<form action="/" method="POST">
+			<div class="form-group">
+				<label for="exampleTextarea">Add another food to devour</label>
+				<textarea class="form-control" id="exampleTextarea" rows="3" name="burgerName"></textarea>
+			</div>
+
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+	<!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+</body>
+</html>
